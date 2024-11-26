@@ -8,7 +8,9 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     
-    "build": "[my-framework] build --output public"
+    "build": "[my-framework] build --output public",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "Priyanshu",
